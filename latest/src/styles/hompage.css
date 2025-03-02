@@ -1,0 +1,266 @@
+/* General Styles */
+.home {
+  font-family: "Montserrat", serif;
+  text-align: center;
+}
+
+.whole {
+  font-family: "Montserrat", serif;
+}
+
+/* Hero Section */
+.hero {
+  font-family: "Montserrat", serif;
+  position: relative;
+  width: 100%;
+  background-color: #0056b3 !important;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  overflow: hidden;
+  text-align: center;
+  padding: 2rem;
+}
+
+.hero-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.hero-overlay {
+  position: relative;
+  z-index: 1;
+  background: rgba(0, 0, 0, 0.6);
+  padding: 2rem;
+  border-radius: 10px;
+  max-width: 80%;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-top: 10px;
+}
+
+.why-choose-us {
+  background-color: #0056b3 !important;
+  color: #fff;
+}
+
+/* Features Section */
+.features-section {
+  background: #f8f9fa;
+  padding: 80px 0;
+}
+
+.feature-box {
+  background: white;
+  border-radius: 12px;
+  transition: all 0.3s ease-in-out;
+  padding: 20px;
+}
+
+.feature-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.feature-icon {
+  color: #007bff;
+}
+
+/* Why Choose Us */
+.why-choose-us {
+  background: #f8f9fa;
+  padding: 80px 0;
+}
+
+.why-choose-us h2 {
+  color: #fff;
+}
+
+.why-choose-us .text-section h3 {
+  color: #fff;
+}
+
+.why-choose-us p {
+  font-weight: 300;
+}
+
+.why-choose-us ul {
+  padding-left: 0;
+}
+
+.why-choose-us ul li {
+  font-size: 20px;
+  font-weight: 600;
+  color: #ffcc00;
+}
+
+/* Popular Courses */
+.popular-courses {
+  background: #f8f9fa;
+  padding: 80px 0;
+}
+
+.popular-courses h2 {
+  font-weight: 600;
+}
+
+.course-card {
+  transition: transform 0.3s ease-in-out;
+}
+
+.course-card:hover {
+  transform: translateY(-5px);
+}
+
+.course-img-wrapper {
+  height: 200px;
+  overflow: hidden;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+}
+
+.course-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease-in-out;
+}
+
+.course-card:hover .course-img {
+  transform: scale(1.1);
+}
+
+/* Tech Logos */
+.tech-logos {
+  background: #f8f9fa;
+  overflow: hidden;
+  white-space: nowrap;
+  position: relative;
+  padding: 40px 0;
+}
+
+.carousel-wrapper {
+  width: 100%;
+  display: flex;
+  overflow: hidden;
+  position: relative;
+}
+
+.carousel-track {
+  display: flex;
+  gap: 50px;
+  align-items: center;
+}
+
+.carousel-item {
+  flex: 0 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  text-align: center;
+}
+
+.logo-img {
+  max-height: 50px;
+  filter: grayscale(100%);
+  transition: filter 0.3s ease-in-out;
+}
+
+.logo-img:hover {
+  filter: grayscale(0%);
+}
+
+.tech-title {
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.tech-image {
+  width: 120px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-top: 10px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.tech-image:hover {
+  transform: scale(1.05);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 1024px) {
+  .hero h1 {
+    font-size: 2.5rem;
+  }
+  .hero p {
+    font-size: 1rem;
+  }
+  .hero-overlay {
+    padding: 1.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero {
+    height: 50vh;
+  }
+  .hero h1 {
+    font-size: 0.8rem;
+  }
+  #second{
+    display: none !important;
+  }
+  .hero p {
+    font-size: 1rem;
+  }
+  .features-section, .why-choose-us, .popular-courses {
+    padding: 40px 0;
+  }
+  .course-img-wrapper {
+    height: 150px;
+  }
+  .tech-logos {
+    padding: 20px 0;
+  }
+}
+#fiy{
+  background-color: #048970 !important;
+  color: #fff;
+}
+
+@media (max-width: 576px) {
+  .hero {
+    height: 40vh;
+  }
+  .hero h1 {
+    font-size: 1.5rem;
+  }
+  .hero p {
+    font-size: 0.85rem;
+  }
+  .hero-overlay {
+    max-width: 95%;
+    padding: 0.8rem;
+  }
+  .feature-box, .course-card {
+    max-width: 100%;
+  }
+}
