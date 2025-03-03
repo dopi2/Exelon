@@ -207,6 +207,10 @@
 
 /* Responsive Adjustments */
 @media (max-width: 1024px) {
+  #time{
+    margin-top: 5%;
+    margin-top: 5%;
+  }
   .hero h1 {
     font-size: 2.5rem;
   }
@@ -219,6 +223,10 @@
 }
 
 @media (max-width: 768px) {
+  #time{
+    margin-top: 5%;
+    margin-top: 5%;
+  }
   .hero {
     height: 50vh;
   }

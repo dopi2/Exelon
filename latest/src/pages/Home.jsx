@@ -28,10 +28,10 @@ const Home = () => {
   return (
     <div className="whole">
       {/* Hero Section */}
-      <section className="hero bg-dark text-white text-center py-5">
+      <section className="hero bg-dark text-white text-center py-5" >
       <Container className="d-flex flex-column flex-md-row align-items-center justify-content-between">
         {/* Text Section */}
-        <div className="text-md-start text-center">
+        <div className="text-md-start text-center"id="time">
           <motion.h1 initial={{ opacity: 0, y: -50 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }}>
           Master Technology with Exelon Academy
           </motion.h1>
