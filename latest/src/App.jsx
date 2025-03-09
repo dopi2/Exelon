@@ -7,6 +7,7 @@ import FAQs from "./pages/FAQs"
 import Home from "./pages/Home"
 import Contact from "./pages/Contact";
 import AboutUs from "./pages/AboutUs";
+import CourseDetailsPage from './pages/CourseDetailsPage';
 const pageVariants = {
   initial: { opacity: 0, y: 50 },
   animate: { opacity: 1, y: 0, transition: { duration: 0.5 } },
@@ -22,6 +23,10 @@ const AnimatedRoutes = () => {
       <Route
           path="/"
           element={<motion.div {...pageVariants}><Home /></motion.div>}
+        />
+          <Route
+          path="/courses/:id"
+          element={<motion.div {...pageVariants}><CourseDetailsPage /></motion.div>}
         />
         <Route
           path="/courses"
